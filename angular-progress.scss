@@ -1,0 +1,26 @@
+@import "compass";
+
+@mixin progress-bar(
+    $inactive: #eee,
+    $active:   #53d76a,
+    $width:    20px,
+    $radius:   20px,
+    $transitionTime: 0.1s
+) {
+    div.co-progress {
+        width: 100%;
+        height: $width;
+
+        @include border-radius($radius);
+        overflow: hidden;
+        background-color: $inactive;
+
+        transition: width $transitionTime;
+
+        &> div {
+            height: 100%;
+            width: 0px;
+            background-color: $active;
+        }
+    }
+}

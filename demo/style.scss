@@ -1,0 +1,10 @@
+
+@import "../angular-progress.scss";
+@include progress-bar();
+
+body > div {
+    margin-top: 2em;
+
+    width: 30%;
+}
+

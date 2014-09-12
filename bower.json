@@ -1,0 +1,9 @@
+{
+  "name": "angular-progress",
+  "main": ["angular-progress.js"],
+  "description": "Simple AngularJS progress bar directive",
+  "dependencies": {
+    "angular": "1.x"
+  },
+  "devDependencies": {}
+}
